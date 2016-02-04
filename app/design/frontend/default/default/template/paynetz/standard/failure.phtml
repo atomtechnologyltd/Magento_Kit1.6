@@ -1,0 +1,30 @@
+
+<?php 
+$comment = $_GET['message'];
+
+if ($comment != '')
+{
+	$lastOrderId = Mage::getSingleton('checkout/session')->getLastOrderId();
+	$order = Mage::getModel('sales/order')->load($lastOrderId);
+	$lastOrderId2 = $order->getIncrementId();
+	$state = 'processing';
+	$status = 'canceled';
+	$isCustomerNotified = false;
+	$order->setState($state, $status, $comment, $isCustomerNotified);
+	$order->save(); ?>
+    
+    <div class="page-title">
+        <h1>Payment Status</h1>
+	</div>
+	<div class="payment_failure_page"><?php echo $comment; ?></div>
+    
+<?php 
+	
+}
+
+else
+{
+	$BaseUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB).'index.php/';
+	Mage::app()->getFrontController()->getResponse()->setRedirect($BaseUrl);
+}
+?>

@@ -1,0 +1,17 @@
+<?php $_code=$this->getMethodCode() ?>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li>
+        <label for="<?php echo $_code ?>_checkout_method" class="required"><em>*</em><?php echo $this->__('Checkout Method') ?></label>
+			<div class="input-box">
+			<select id="<?php echo $_code ?>_checkout_method" name="payment[checkout_method]" class="required-entry validate-paynetz-type-select">
+					<option value=""><?php echo $this->__('--Please Select--')?></option>
+					<option value="NB">Netbanking</option>
+					<option value="CC">Credit Card</option>
+					<option value="DC">Debit Card</option>
+					<option value="IMPS">IMPS</option>
+			</select>
+			</div>
+	</li>
+<div>
+    <?php echo $this->getMethod()->getConfigData('message');?>
+</div>

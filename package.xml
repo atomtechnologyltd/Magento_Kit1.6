@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+    <name>AtomPaynetz</name>
+    <version>2.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Atom introduces new paynetz package with many new features</summary>
+    <description>It includes many features as such:&amp;#xD;&#xD;
+- Maintain transaction logs&amp;#xD;&#xD;
+- Additional UDF parameters for reference&amp;#xD;&#xD;
+- Email functionality..&amp;#xD;&#xD;
+&amp;#xD;&#xD;
+and much more...</description>
+    <notes>New release</notes>
+    <authors><author><name>ATOM</name><user>David</user><email>david@gmail.com</email></author></authors>
+    <date>2013-10-09</date>
+    <time>16:41:19</time>
+    <contents><target name="magelocal"><dir name="atom"><dir name="Paynetz"><dir name="Block"><dir name="Standard"><file name="Failure.php" hash="6527a70ec0300bd5bcbf3011106999fa"/><file name="Form.php" hash="942915864ff9c5e5c4a8a055d1a86689"/><file name="Redirect.php" hash="c42614b5bea2bc91fc3c558359a304fc"/></dir></dir><dir name="Helper"><file name="Data.php" hash="e6a574dfd9b7af9ad2737fd36d52f4b6"/></dir><dir name="Model"><dir name="Api"><file name="Debug.php" hash="3cd4a9dade84c2ffeb66e87f42e3b1c6"/></dir><file name="Config.php" hash="fcae287a6fc4cb0adf89059d522ccd79"/><dir name="Mysql4"><dir name="Api"><dir name="Debug"><file name="Collection.php" hash="f7c53d4c8b9091df81fcf0ee4cbbfe0d"/></dir><file name="Debug.php" hash="2e6a2189d2342ce33f5e73ebc01aaf7d"/></dir><file name="Setup.php" hash="5b46c8c4b855ad3f6edfb5eafbf85da8"/></dir><dir name="Source"><file name="Language.php" hash="c7dec9632d35dc464c7f23eedab1dc73"/></dir><file name="Standard.php" hash="a03a75cb5a09993aade2d8f6efe2814a"/></dir><dir name="controllers"><file name="StandardController.php" hash="3881969f01ceca7ea68e6781a43108b3"/></dir><dir name="etc"><file name="config.xml" hash="b0b4466fdd3e64a5c459935f8efa15dc"/><file name="system.xml" hash="71f0367bdb725663879a2b2aa223c228"/></dir><dir name="sql"><dir name="paynetz_setup"><file name="mysql4-install-0.1.0.php" hash="ad3c1ab806377ead0c1b8aca5d9781bf"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="paynetz"><dir name="standard"><file name="failure.phtml" hash="4b22e63f9631369182fa112f25621948"/><file name="form.phtml" hash="280469cfce099dbd312f820860935537"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Atom_paynetz.xml" hash="f50144cb4d180345fb771c329352ea06"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
